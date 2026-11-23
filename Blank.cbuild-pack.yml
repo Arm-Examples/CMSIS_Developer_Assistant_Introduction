@@ -1,0 +1,11 @@
+cbuild-pack:
+  resolved-packs:
+    - resolved-pack: ARM::CMSIS@6.4.0
+      selected-by-pack:
+        - ARM::CMSIS
+    - resolved-pack: ARM::CMSIS-DSP@1.16.0
+      selected-by-pack:
+        - ARM::CMSIS-DSP@1.16.0
+    - resolved-pack: Microchip::PIC32CK-GC_DFP@1.5.239
+      selected-by-pack:
+        - Microchip::PIC32CK-GC_DFP

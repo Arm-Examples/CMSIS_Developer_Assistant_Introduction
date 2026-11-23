@@ -1,0 +1,7 @@
+layer:
+  type: Board
+  description: PIC32CK GC Curiosity Ultra ADC, timer, EVSYS, DMA and LED.
+  groups:
+    - group: Production Board
+      files:
+        - file: ./board_production.c

@@ -1,0 +1,7 @@
+layer:
+  type: Board
+  description: Synthetic ADC frames for the shared FFT application.
+  groups:
+    - group: Test Board
+      files:
+        - file: ./board_test.c

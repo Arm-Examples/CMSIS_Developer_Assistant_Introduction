@@ -53,3 +53,11 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+# CMSIS Solution-related files
+out/
+tmp/
+.cmsis/
+*.cbuild-idx.yml
+*.cbuild-idx.yml.prev
+.DS_Store
