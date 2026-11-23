@@ -9,8 +9,9 @@ debugging and documentation retrieval from software packs.
 Start using CDA in Vs Code with these three easy steps:
 
 1. Install [Keil Studio](https://marketplace.visualstudio.com/items?itemName=Arm.keil-studio-pack).
-2. Install [CMSIS Developer Assistant](https://marketplace.visualstudio.com/items?itemName=Arm.cmsis-developer-assistant)
-3. [Configure it](https://github.com/Open-CMSIS-Pack/CMSIS-Developer-Assistant#get-started) for your AI agent.
+2. Install [CMSIS Developer Assistant](https://marketplace.visualstudio.com/items?itemName=Arm.cmsis-developer-assistant).
+3. Open the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette) and run
+   **CMSIS Developer Assistant: Configure Agent**.
 
 ## Webinar Recording and Collaterals
 
