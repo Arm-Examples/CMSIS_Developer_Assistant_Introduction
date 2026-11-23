@@ -28,7 +28,7 @@ Refer to the [webinar slides](./docs/20261119_Getting_Started_with_CDA.pdf)
 
 ## Example Repository
 
-This example turns the PIC32CK GC Curiosity Ultra board into a real-time
+This example turns the [PIC32CK GC Curiosity Ultra board](https://www.microchip.com/en-us/development-tool/ev44p93a) into a real-time
 spectrum analyzer. It captures a 12-bit analog signal, reduces the sample
 rate to 48 ksample/s, and computes a 1024-point FFT. A second target feeds
 the same processing code with a known sine wave so the signal-processing
