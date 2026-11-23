@@ -1,32 +1,73 @@
-# CMSIS Developer Assistant Introduction Webinar
+# CMSIS Developer Assistant Introduction
 
-The CMSIS Developer Assistant gives an AI agent access to the CMSIS Build System, debugger, project documentation,
+CMSIS Developer Assistant (CDA) gives an AI agent access to the CMSIS build System, debugger, project documentation,
 target registers and connected hardware. It supports development from project setup through delivery with CI workflows,
-debugging and documentation retrieval from software packs. It also helps with running projects. Either you want to move
-from µVision project format to CMSIS Solution or want to work on a native CMake or Zephyr project in a solution, the
-agent helps you getting started. It also supports you in understanding legacy projects that might have been developed a
-long time ago.
+debugging and documentation retrieval from software packs.
 
-![CMSIS Developer Assistant Overview](./docs/CDA.png)
+## Quick Start
 
-The CMSIS Developer Assistant is built on four complementary pillars:
+Start using CDA in Vs Code with these three easy steps:
 
-1. The CMSIS Solution orchestrates project formats, hardware, and related documentation, bringing the development
-   context together.
-2. The professional CMSIS Debugger enables target connectivity to observe behavior and detect bugs.
-3. Documentation available in CMSIS-Packs gives the assistant access to device, board, and software information within
-   the workflow.
-4. Skills encode best practices and target knowledge, guiding the assistant through embedded development workflows.
-
-Together, these four pillars provide both the tools and domain knowledge needed to support embedded development.
+1. Install [Keil Studio](https://marketplace.visualstudio.com/items?itemName=Arm.keil-studio-pack).
+2. Install [CMSIS Developer Assistant](https://marketplace.visualstudio.com/items?itemName=Arm.cmsis-developer-assistant)
+3. [Configure it](https://github.com/Open-CMSIS-Pack/CMSIS-Developer-Assistant#get-started) for your AI agent.
 
 ## Webinar Recording and Collaterals
 
 [![CMSIS Developer Assistant Webinar Recording](./docs/preview-image.png)](https://armkeil.blob.core.windows.net/developer/Files/videos/KeilStudio/20261119_CDA_Intro.mp4)
 
-Refer to the [webinar slides](./docs/20261119_Getting_Started_with_CDA.pdf)
+### Slides
 
-## Example Repository
+Review the [webinar slides](./docs/20261119_Getting_Started_with_CDA.pdf) to get access to the links provided in the
+webinar.
+
+### Prompts
+
+The following prompts were used to create the [example](#example):
+
+#### Project Creation
+
+```txt
+I have a PIC32CK GC Curiosity Ultra Development Board connected to my PC. Based on the documentation available here: https://ww1.microchip.com/downloads/aemDocuments/documents/MCU32/ProductDocuments/UserGuides/PIC32CK-SG01-GC01-Curiosity-Ultra-User-Guide-DS70005529.pdf, create a blinky application for it.
+```
+
+#### Ask about Peripherals
+
+```txt
+Which peripherals are available in my device?
+```
+
+#### Define Intent
+
+```txt
+Can I use one of them to capture a 12-bit analog input at 48 kHz sampling rate and then analyze the input stream with an FFT?
+```
+
+#### Create Specification
+
+```txt
+Create an implementation proposal and let me review it.
+```
+
+#### Check Technical Detail
+
+```txt
+The proposal looks good. Selected pin is ok. Usage of RAM is OK. Resolution and frame period sound ok. Is the frequency bans 0 - 24 kHz?
+```
+
+#### Implement
+
+```txt
+Start the implementation
+```
+
+#### Restructuring the Application
+
+```txt
+Create board layers that isolates peripherals from application logic. One board layer for production, one board layer for testing. And add two targets.
+```
+
+## Example
 
 This example turns the [PIC32CK GC Curiosity Ultra board](https://www.microchip.com/en-us/development-tool/ev44p93a) into a real-time
 spectrum analyzer. It captures a 12-bit analog signal, reduces the sample
