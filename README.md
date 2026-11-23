@@ -19,7 +19,7 @@ Start using CDA in Vs Code with these three easy steps:
 
 ### Slides
 
-Review the [webinar slides](./docs/20261119_Getting_Started_with_CDA.pdf) to get access to the links provided in the
+Review the [slides](./docs/20261119_Getting_Started_with_CDA.pdf) to get access to the links provided in the
 webinar.
 
 ### Prompts
