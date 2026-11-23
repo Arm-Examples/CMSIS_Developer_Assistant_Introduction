@@ -43,7 +43,8 @@ Which peripherals are available in my device?
 #### Define Intent
 
 ```txt
-Can I use one of them to capture a 12-bit analog input at 48 kHz sampling rate and then analyze the input stream with an FFT?
+Can I use one of them to capture a 12-bit analog input at 48 kHz sampling rate
+and then analyze the input stream with an FFT?
 ```
 
 #### Create Specification
@@ -55,7 +56,8 @@ Create an implementation proposal and let me review it.
 #### Check Technical Detail
 
 ```txt
-The proposal looks good. Selected pin is ok. Usage of RAM is OK. Resolution and frame period sound ok. Is the frequency bans 0 - 24 kHz?
+The proposal looks good. Selected pin is ok. Usage of RAM is OK. Resolution and
+frame period sound ok. Is the frequency bans 0 - 24 kHz?
 ```
 
 #### Implement
@@ -67,7 +69,8 @@ Start the implementation
 #### Restructuring the Application
 
 ```txt
-Create board layers that isolates peripherals from application logic. One board layer for production, one board layer for testing. And add two targets.
+Create board layers that isolates peripherals from application logic. One board
+layer for production, one board layer for testing. And add two targets.
 ```
 
 ## Example
