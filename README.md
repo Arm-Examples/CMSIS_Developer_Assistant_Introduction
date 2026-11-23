@@ -28,7 +28,10 @@ The following prompts were used to create the [example](#example):
 #### Project Creation
 
 ```txt
-I have a PIC32CK GC Curiosity Ultra Development Board connected to my PC. Based on the documentation available here: https://ww1.microchip.com/downloads/aemDocuments/documents/MCU32/ProductDocuments/UserGuides/PIC32CK-SG01-GC01-Curiosity-Ultra-User-Guide-DS70005529.pdf, create a blinky application for it.
+I have a PIC32CK GC Curiosity Ultra Development Board connected to my PC. Based
+on the documentation available here: https://ww1.microchip.com/downloads/
+aemDocuments/documents/MCU32/ProductDocuments/UserGuides/PIC32CK-SG01-GC01-
+Curiosity-Ultra-User-Guide-DS70005529.pdf, create a blinky application for it.
 ```
 
 #### Ask about Peripherals
