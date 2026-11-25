@@ -1,32 +1,19 @@
 # CMSIS Developer Assistant Introduction
 
-CMSIS Developer Assistant (CDA) gives an AI agent access to the CMSIS build System, debugger, project documentation,
+[<img src="./docs/preview-image.png" alt="CMSIS Developer Assistant introduction webinar" width="438" height="255" align="left">](https://armkeil.blob.core.windows.net/developer/Files/videos/KeilStudio/20261119_CDA_Intro.mp4 "CMSIS Developer Assistant introduction webinar")
+
+[CMSIS Developer Assistant (CDA)](https://marketplace.visualstudio.com/items?itemName=Arm.cmsis-developer-assistant) gives an AI agent access to the CMSIS build system, debugger, project documentation,
 target registers and connected hardware. It supports development from project setup through delivery with CI workflows,
-debugging and documentation retrieval from software packs.
+debugging and documentation retrieval from software packs. The [webinar slides](./docs/20261119_Getting_Started_with_CDA.pdf)
+provide an overview.
 
-## Quick Start
+<br clear="left"/>
 
-Start using CDA in Vs Code with these three easy steps:
-
-1. Install [Keil Studio](https://marketplace.visualstudio.com/items?itemName=Arm.keil-studio-pack).
-2. Install [CMSIS Developer Assistant](https://marketplace.visualstudio.com/items?itemName=Arm.cmsis-developer-assistant).
-3. Open the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette) and run
-   **CMSIS Developer Assistant: Configure Agent**.
-
-## Webinar Recording and Collaterals
-
-[![CMSIS Developer Assistant Webinar Recording](./docs/preview-image.png)](https://armkeil.blob.core.windows.net/developer/Files/videos/KeilStudio/20261119_CDA_Intro.mp4)
-
-### Slides
-
-Review the [slides](./docs/20261119_Getting_Started_with_CDA.pdf) to get access to the links provided in the
-webinar.
-
-### Prompts
+## Prompts
 
 The following prompts were used to create the [example](#example):
 
-#### Project Creation
+### Project Creation
 
 ```txt
 I have a PIC32CK GC Curiosity Ultra Development Board connected to my PC. Based
@@ -35,44 +22,53 @@ aemDocuments/documents/MCU32/ProductDocuments/UserGuides/PIC32CK-SG01-GC01-
 Curiosity-Ultra-User-Guide-DS70005529.pdf, create a blinky application for it.
 ```
 
-#### Ask about Peripherals
+### Ask about Peripherals
 
 ```txt
 Which peripherals are available in my device?
 ```
 
-#### Define Intent
+### Define Intent
 
 ```txt
 Can I use one of them to capture a 12-bit analog input at 48 kHz sampling rate
 and then analyze the input stream with an FFT?
 ```
 
-#### Create Specification
+### Create Specification
 
 ```txt
 Create an implementation proposal and let me review it.
 ```
 
-#### Check Technical Detail
+### Check Technical Detail
 
 ```txt
 The proposal looks good. Selected pin is ok. Usage of RAM is OK. Resolution and
 frame period sound ok. Is the frequency bans 0 - 24 kHz?
 ```
 
-#### Implement
+### Implement
 
 ```txt
 Start the implementation
 ```
 
-#### Restructuring the Application
+### Restructuring the Application
 
 ```txt
 Create board layers that isolates peripherals from application logic. One board
 layer for production, one board layer for testing. And add two targets.
 ```
+
+## Quick Start
+
+Start using CDA in VS Code with these three easy steps:
+
+1. Install [Keil Studio](https://marketplace.visualstudio.com/items?itemName=Arm.keil-studio-pack).
+2. Install [CMSIS Developer Assistant](https://marketplace.visualstudio.com/items?itemName=Arm.cmsis-developer-assistant).
+3. Open the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette) and run
+   **CMSIS Developer Assistant: Configure Agent**.
 
 ## Example
 
